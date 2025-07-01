@@ -1,0 +1,127 @@
+/* Sidebar Container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: #f5f1ff;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* Scrollable content wrapper */
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Section Titles */
+.sidebar h3 {
+  color: #3a0066;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.sidebar-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  background-color: #e6ddff;
+  color: #3a0066;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.sidebar-btn:hover {
+  background-color: #d3c3f3;
+}
+
+.sidebar-divider {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Fixed footer buttons */
+.sidebar-footer {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+/* .watchlist-btn,
+.about-btn {
+  background-color: #e6ddff;
+  color: #3a0066;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+} */
+
+.watchlist-btn:hover,
+.about-btn:hover {
+  background-color: #d0c0ff;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 6px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Main content */
+.main-content {
+  margin-left: 260px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

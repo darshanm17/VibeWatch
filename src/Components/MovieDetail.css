@@ -1,0 +1,259 @@
+.movie-detail {
+  background-color: #f9f6ff;
+  color: #3a0066;
+  min-height: 100vh;
+  padding: 30px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.back-button {
+  text-decoration: none;
+  color: #7e57c2;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.movie-detail-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.movie-poster {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(126, 87, 194, 0.3);
+}
+
+.movie-info {
+  flex: 1;
+  font-size: 1rem;
+  color: #4a0072;
+}
+
+.movie-info h1 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+  color: #3a0066;
+}
+
+.movie-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.movie-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.movie-links a {
+  color: #7e57c2;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.movie-links button {
+  background-color: #7e57c2;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.movie-links button:hover {
+  background-color: #5e3bb4;
+}
+
+.watchlist-btn {
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.watchlist-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Cast Section */
+.cast-section {
+  margin-top: 40px;
+}
+
+.cast-section h2 {
+  font-size: 1.8rem;
+  color: #3a0066;
+  margin-bottom: 20px;
+}
+
+.cast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.cast-card {
+  width: 140px;
+  text-align: center;
+  color: #3a0066;
+  font-size: 0.9rem;
+  background-color: #e6ddff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(126, 87, 194, 0.15);
+}
+
+.cast-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* Trailer Container */
+.trailer-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  margin-bottom: 30px;
+}
+
+.trailer-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(126, 87, 194, 0.4);
+}
+
+/* Similar Movies */
+.similar-section {
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.similar-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* 🔽 Responsive Styling */
+@media (max-width: 1024px) {
+  .movie-poster {
+    width: 260px;
+  }
+
+  .movie-info h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-detail-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-poster {
+    width: 80%;
+    max-width: 280px;
+  }
+
+  .movie-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .movie-links {
+    justify-content: center;
+  }
+
+  .cast-card {
+    width: 120px;
+  }
+
+  .cast-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-info h1 {
+    font-size: 1.6rem;
+  }
+
+  .movie-links a, .movie-links button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .cast-card {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+
+  .cast-card img {
+    height: 150px;
+  }
+}
+.watch-section {
+  margin-top: 30px;
+  background-color: #e6ddff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(126, 87, 194, 0.15);
+}
+
+.watch-section h2 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.provider-logos {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.provider-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: fill;
+  background: white;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.watch-now-btn {
+  margin-top: 15px;
+  display: inline-block;
+  background-color: #7e57c2;
+  color: rgb(255, 255, 255);
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.watch-now-btn:hover {
+  background-color: #5e3bb4;
+}

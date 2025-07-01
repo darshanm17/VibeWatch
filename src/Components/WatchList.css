@@ -1,0 +1,53 @@
+.watchlist-page {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  color: #3a0066;
+  font-family: 'Poppins', sans-serif;
+}
+
+.watchlist-page h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #3a0066;
+}
+
+/* .movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+} */
+
+.movie-card-with-remove {
+  background-color: #f3ecff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(102, 51, 153, 0.15);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.movie-card-with-remove:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(102, 51, 153, 0.25);
+}
+
+.remove-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ff6f91, #ff9671);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: linear-gradient(145deg, #ff4d6d, #ff6f61);
+  box-shadow: 0 0 10px rgba(255, 111, 145, 0.4);
+}

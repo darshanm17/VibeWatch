@@ -1,0 +1,12 @@
+.home-container {
+  display: flex;
+  min-height: 100vh;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.content-area {
+  flex: 1;
+  padding: 20px;
+  overflow-x: hidden;
+}
